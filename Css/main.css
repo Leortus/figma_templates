@@ -8,6 +8,85 @@ max-width: 1440px;
 margin: 0 auto;
 }
 
+nav {
+	position: relative;
+	top: 50px;
+	display: flex;
+	align-items: center;
+	background: #FFB342;
+	max-width: 80%;
+	margin: 0 auto;
+	height: 80px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.36px;
+	
+}
+
+/* headers */
+h1 {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 78px;
+	/* or 130% */
+	
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+	
+	color: #FFFFFF;
+}
+
+h2 {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 58px;
+	/* identical to box height, or 130% */
+	
+	letter-spacing: 0.36px;
+	
+	color: #1C2752;
+	
+}
+
+h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	/* identical to box height, or 150% */
+	
+	letter-spacing: 0.36px;
+	text-transform: capitalize;
+	
+	color: #FFFFFF;
+}
+/* headers end */
+p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	/* or 150% */
+	
+	text-align: center;
+	letter-spacing: 0.36px;
+	
+	color: #1C2752;
+}
+
+
+
+
 .header_info_container {
 	width: 100%;
 	height: 69px;
@@ -49,4 +128,206 @@ margin: 0 auto;
 
 	background-color:  #c2c2c2;
 	
+}
+
+.contact_info_container {
+	display: flex;
+	align-items:center;
+	height: 128px;
+	width: 80%;
+	margin: 0 auto -40px auto;
+}
+
+.logo {
+	width: 30%;
+}
+
+.contact_info {
+	display: flex;
+	align-items:center;
+	justify-content: flex-end;
+	row-gap: 40px;
+	width: 70%;
+}
+
+.company_mail {
+
+background-image: url("/img/company_mail_icon.svg");
+background-repeat: no-repeat;
+padding: 0 65px 0 90px;
+background-position: top 50% left -0%;
+z-index: -1;
+}
+
+.contact_info_type {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	/* identical to box height, or 130% */
+	
+	letter-spacing: 0.36px;
+	
+	color: #1C2752;
+}
+
+.contact_info_data {
+	margin-top: 0;
+	padding-top: 0;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	/* identical to box height, or 159% */
+
+	letter-spacing: 0.36px;
+
+	color: #7E7E7E;
+}
+
+.company_phone {
+	background-image: url("/img/company_phone_icon.svg");
+	background-repeat: no-repeat;
+	padding-left: 90px;
+	background-position: top 50% left -0%;
+	z-index: -1;
+}
+
+.menu {
+	
+	display: flex;
+	align-items:center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 60%;
+	height: 100%;
+
+}
+
+.menu a {
+	display: flex;
+	align-items:center;
+	height: 100%;
+	padding: 0 10px;
+
+
+
+	color: #222222;
+}
+
+.menu a:hover {
+	color:#F2F2F2;
+	background: #cf9032;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	max-width: 100%;
+	
+}
+
+.any_questions_button {
+	display: flex;
+	align-items:center;
+	justify-content: right;
+	margin-right: auto;
+
+	height: 100%;
+	width: 40%;
+}
+
+.any_questions_button a {
+	display: flex;
+	align-items:center;
+	height:  80%;
+margin-right: 5px;
+	color: #F4F4F4;
+	padding:  0 15px;
+	background: #1C2752;
+	border: 2px solid #1C2752;
+}
+
+.services_promo_container {
+	background-color: #1C2752;
+	background-image: url("/img/two_workers.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: inherit;
+	background-size: cover;
+}
+
+.services_promo_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	height: 813px;
+}
+
+.services_promo_text h3 span {
+	background: rgba(255, 255, 255, 0.2);
+border-radius: 0px;
+padding: 5px 60px;
+}
+
+.services_promo_text h3 span {
+	background-image: url("/img/yellow_gear_icon.svg");
+	background-repeat: no-repeat;
+	background-position: top 50% left 2%;
+	z-index: -1;
+}
+
+
+/* CSS */
+.yellow_button {
+  align-items: center;
+  background-color: #FFB342;
+  border: 2px solid #FFB342;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 68px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  max-width: 227px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.36px;
+}
+
+.yellow_button:focus {
+  color: #171e29;
+}
+
+.yellow_button:hover {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
 }
